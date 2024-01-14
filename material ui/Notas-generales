@@ -1,0 +1,31 @@
+# Agregar material al proyecto:
+    npm install --save @angular/material @angular/cdk @angular/animations
+    
+# ng add @angular/material (mas facil)
+
+
+# Algunos botones:
+    import {MatButtonModule } from '@angular/material/button';
+
+    mat-button: Botón básico sin color de fondo
+    mat-raised-button: Botón con sombra y con color de fondo
+    mat-flat-button: Botón con color pero sin sombra
+    mat-stroked-button: Botón con borde pero sin color de fondo
+    mat-icon-button: Botón circular para añadir un icono, es transparente
+    mat-fab: Botón circular con fondo y sombra
+    mat-mini-fab: Lo mismo que el anterior pero más pequeño
+
+# Para los iconos:
+    import {MatIconModule} from '@angular/material/icon';
+    <mat-icon>Nombre</mat-icon>
+
+# Sobre el tema y los colores:
+    "@angular/material/prebuilt-themes/indigo-pink.css" en angular.json vemos que hemos agregado este, hay otros.
+    primary secondary accent warn disabled son propios del tema que hallamos elegido
+
+# separar estas importaciones para modularizar la app
+    ng g module materialImport
+    Aqui importamos y exportamos los modulos '@angular/material/lala'
+    en el app.module.ts solamente traemos el modulo materialImportModule
+
+# continua minuto 26 es buen repaso de angular
